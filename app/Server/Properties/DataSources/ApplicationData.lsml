@@ -6,7 +6,8 @@
   </ServiceApplication.Attributes>
   <EntityContainer
     Name="ApplicationData"
-    IsIntrinsic="True">
+    IsIntrinsic="True"
+    DataProvider="EntityFrameworkDataProvider">
     <EntityContainer.Attributes>
       <Partial
         IsPrimary="True" />
@@ -16,6 +17,5 @@
   </EntityContainer>
   <DataService
     Name="ApplicationDataMapping"
-    DataProvider="EntityFrameworkDataProvider"
     EntityContainer="ApplicationData" />
 </ServiceApplication>

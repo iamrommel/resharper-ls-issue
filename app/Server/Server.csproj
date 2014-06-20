@@ -7,14 +7,14 @@
     </ProductVersion>
     <SchemaVersion>
     </SchemaVersion>
-    <ProjectTypeGuids>{DA98106F-DEFA-4A62-8804-0BD2F166A45D};{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectTypeGuids>{8BB0C5E8-0616-4F60-8E55-A43933E57E9C};{349C5851-65DF-11DA-9384-00065B846F21};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <ProjectGuid>{17C18752-CE92-46CC-B56A-607D9491A228}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LightSwitchApplication</RootNamespace>
     <AssemblyName>Application.Server</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <LightSwitchVersion>v4.0</LightSwitchVersion>
+    <LightSwitchVersion>v4.5</LightSwitchVersion>
     <FileAlignment>512</FileAlignment>
     <IgnoreDeployManagedRuntimeVersion>True</IgnoreDeployManagedRuntimeVersion>
     <UseDeclareParametersXMLInMsDeploy>False</UseDeclareParametersXMLInMsDeploy>
@@ -29,7 +29,6 @@
     <SccLocalPath>SAK</SccLocalPath>
     <SccAuxPath>SAK</SccAuxPath>
     <SccProvider>SAK</SccProvider>
-    <LightSwitchProjectTypeV3>Server</LightSwitchProjectTypeV3>
     <DefaultLanguage>en-US</DefaultLanguage>
     <MicrosoftSdkDir Condition="'$(MicrosoftSdkDir)' == ''">$([System.IO.Path]::Combine($(MSBuildProgramFiles32), 'Microsoft SDKs'))</MicrosoftSdkDir>
     <LightSwitchSdkPath Condition="'$(LightSwitchSdkPath)' == ''">$([System.IO.Path]::Combine($(MicrosoftSdkDir), 'LightSwitch', $(LightSwitchVersion)))</LightSwitchSdkPath>
@@ -38,6 +37,7 @@
     <LightSwitchDisplayName>Server</LightSwitchDisplayName>
     <NuGetPackagesFolder Condition=" Exists('..\Packages')">..\Packages\</NuGetPackagesFolder>
     <NuGetPackagesFolder Condition=" Exists('..\..\Packages')">..\..\Packages\</NuGetPackagesFolder>
+    <LightSwitchProjectTypeV45>Server</LightSwitchProjectTypeV45>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -98,12 +98,12 @@
       <HintPath>$(LightSwitchSDKPath)\Server\Microsoft.LightSwitch.AppBridge.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.LightSwitch.ExportProvider, Version=10.0.12.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+    <Reference Include="Microsoft.LightSwitch.ExportProvider, Version=10.0.12.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
       <HintPath>$(LightSwitchSDKPath)\Client\Microsoft.LightSwitch.ExportProvider.dll</HintPath>
       <SpecificVersion>True</SpecificVersion>
       <Private>True</Private>
     </Reference>
-    <Reference Include="Microsoft.LightSwitch.CodeMarker, Version=12.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+    <Reference Include="Microsoft.LightSwitch.CodeMarker, Version=12.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
       <HintPath>$(LightSwitchSDKPath)\Client\Microsoft.LightSwitch.CodeMarker.dll</HintPath>
       <SpecificVersion>True</SpecificVersion>
       <Private>True</Private>

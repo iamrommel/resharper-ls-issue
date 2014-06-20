@@ -1,4 +1,3 @@
-﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30501.0
@@ -7,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "app\Client\Client
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "app\Server\Server.csproj", "{17C18752-CE92-46CC-B56A-607D9491A228}"
 EndProject
-Project("{8D9C8A9D-5DED-4B64-BF65-B598BA549D93}") = "TMMSD1", "app\TMMSD1.lsxproj", "{B3B60D5E-228C-40E4-83EF-F35BDB584D0A}"
+Project("{581633EB-B896-402F-8E60-36F3DA191C85}") = "TMMSD1", "app\TMMSD1.lsxtproj", "{B3B60D5E-228C-40E4-83EF-F35BDB584D0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
